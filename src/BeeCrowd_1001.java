@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BeeCroud_1001 {
+public class BeeCrowd_1001 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         int A, B, X;
