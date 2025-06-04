@@ -4,15 +4,16 @@ public class BeeCrowd_1178 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
             double [] conjunto = new double[101];
-            int X = scan.nextInt();
+            double X = scan.nextDouble();
             conjunto[0] = X;
-            System.out.printf("N[0] = %.4f\n", conjunto[0]);
 
-            for(int i = 1; i<101; i++){
-            X = X/2;
-            conjunto[i]=X;
-            System.out.printf("N["+i+"] = %.4f\n", conjunto[i]);
-            }    
+            for(int i=0; i<100; i++){
+                conjunto[i+1] = conjunto[i]/2;
+            }
+
+            for(int j=0; j<100; j++){
+                System.out.printf("N["+j+"] = %.4f\n", conjunto[j]);
+            }
         scan.close();
     }
 }
